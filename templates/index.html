@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Predictor</title>
+</head>
+<body>
+    <h2>Diabetes Prediction</h2>
+    <form action="/predict" method="post">
+        <p>Enter 10 medical features (numbers only):</p>
+        <input type="text" name="age" placeholder="Age"><br>
+        <input type="text" name="sex" placeholder="Sex (0/1)"><br>
+        <input type="text" name="bmi" placeholder="BMI"><br>
+        <input type="text" name="bp" placeholder="Blood Pressure"><br>
+        <input type="text" name="s1" placeholder="S1"><br>
+        <input type="text" name="s2" placeholder="S2"><br>
+        <input type="text" name="s3" placeholder="S3"><br>
+        <input type="text" name="s4" placeholder="S4"><br>
+        <input type="text" name="s5" placeholder="S5"><br>
+        <input type="text" name="s6" placeholder="S6"><br><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    <h3>{{ result }}</h3>
+</body>
+</html>
